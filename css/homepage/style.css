@@ -181,9 +181,13 @@ main section{
     color: var(--black);
 
 }
+.main__about p strong{
+    color: var(--red-orange);
+}
 .main__reason {
 
-    flex-direction: column;
+    padding: 15px;
+    flex-direction: row;
     flex-wrap: wrap;
 
     background-color: var(--red-orange);
@@ -191,9 +195,12 @@ main section{
 }
 .main__reason h2{
 
+    margin-bottom: 15px;
     width: 100%;
 
     text-align: center;
+    font-size: 3rem;
+    color: var(--white);
 
 }
 .main__reason article{
