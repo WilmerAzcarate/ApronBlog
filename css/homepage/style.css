@@ -14,7 +14,9 @@
 
     --white: #ffffff;
     --light-orange:#fff7e8;
-    --orange:#ff8f1d;
+    --red-orange:#ff8f1d;
+    --orange:#F2BC1B;
+    --black: #000000;
 
 }
 
@@ -33,9 +35,12 @@ html{
 }
 body{
 
+    display: flex;
+    flex-direction: column;
+
     font-family: sans-serif;
     font-weight: lighter;
-    background-color: #fff7e8;
+    background-color: var(--light-orange);
     width: 100vw;
 
 }
@@ -52,7 +57,7 @@ header .nav{
     width: 100%;
     
     background-color: var(--white);
-    border-bottom: 1px var(--orange) solid;
+    border-bottom: 1px var(--red-orange) solid;
 
 }
 .nav__checkbox{
@@ -74,7 +79,7 @@ header .nav{
 .nav__toggle svg{
 
     width: 3rem;
-    fill: var(--orange);
+    fill: var(--red-orange);
 
 }
 .nav__toggle .menu,
@@ -113,7 +118,7 @@ header .nav{
 }
 .nav__menu a{
 
-    color: var(--orange);
+    color: var(--red-orange);
     font-size: 1.1rem;
     text-decoration: none;
 
@@ -139,5 +144,59 @@ header .nav{
     display: none;
 }
 /*main*/
+main{
 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+main section{
+
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main__about{
+    background-color: var(--white);
+}
+.main__about h2{
+
+    margin-top: 15px;
+
+    font-size: 3rem;
+    color: var(--red-orange);
+
+}
+.main__about p{
+    
+    margin: 10px;
+
+    font-size: 1.8rem;
+    color: var(--black);
+
+}
+.main__reason {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: var(--red-orange);
+
+}
+.main__reason h2{
+
+    width: 100%;
+
+    text-align: center;
+
+}
+.main__reason article{
+    width: 50%;
+}
 /*footer*/
